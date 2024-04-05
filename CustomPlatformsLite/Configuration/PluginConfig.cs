@@ -1,28 +1,17 @@
-﻿using System.Runtime.CompilerServices;
-using IPA.Config.Stores;
+﻿using IPA.Config.Stores;
+using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo(GeneratedStore.AssemblyVisibilityTarget)]
 namespace CustomPlatformsLite.Configuration
 {
     internal class PluginConfig
     {
-        public static PluginConfig Instance { get; set; }
+        // public virtual string SomeSetting { get; set; } = "dududududu";
 
-        public virtual int IntValue { get; set; } = 42; 
+        // public virtual void OnReload() { }
 
-        public virtual void OnReload()
-        {
+        // public virtual void Changed() { }
 
-        }
-
-        public virtual void Changed()
-        {
-            // Do stuff when the config is changed.
-        }
-
-        public virtual void CopyFrom(PluginConfig other)
-        {
-
-        }
+        // public virtual void CopyFrom(PluginConfig other) { }
     }
 }
