@@ -1,8 +1,8 @@
 ﻿using Zenject;
 
-namespace CustomPlatformsLite.Installers
+namespace EnvironmentHelper.Installers
 {
-    internal class CPLGameInstaller : Installer
+    internal class CPLMenuInstaller : Installer
     {
         public override void InstallBindings()
         {

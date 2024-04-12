@@ -1,5 +1,5 @@
-﻿using CustomPlatformsLite.Configuration;
-using CustomPlatformsLite.Installers;
+﻿using EnvironmentHelper.Configuration;
+using EnvironmentHelper.Installers;
 using IPA;
 using IPA.Config;
 using IPA.Config.Stores;
@@ -7,12 +7,12 @@ using IPA.Loader;
 using SiraUtil.Zenject;
 using IPALogger = IPA.Logging.Logger;
 
-namespace CustomPlatformsLite
+namespace EnvironmentHelper
 {
     [Plugin(RuntimeOptions.DynamicInit)]
     public class Plugin
     {
-        // public const string HarmonyId = "com.github.qqrz997.CustomPlatformsLite";
+        // public const string HarmonyId = "com.github.qqrz997.EnvironmentHelper";
         // internal static readonly HarmonyLib.Harmony harmony = new HarmonyLib.Harmony(HarmonyId);
 
         private IPALogger logger;

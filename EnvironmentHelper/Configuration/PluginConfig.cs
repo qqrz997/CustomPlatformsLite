@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo(GeneratedStore.AssemblyVisibilityTarget)]
-namespace CustomPlatformsLite.Configuration
+namespace EnvironmentHelper.Configuration
 {
     internal class PluginConfig
     {

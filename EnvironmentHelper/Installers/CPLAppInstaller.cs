@@ -1,7 +1,7 @@
-﻿using CustomPlatformsLite.Configuration;
+﻿using EnvironmentHelper.Configuration;
 using Zenject;
 
-namespace CustomPlatformsLite.Installers
+namespace EnvironmentHelper.Installers
 {
     internal class CPLAppInstaller : Installer
     {
