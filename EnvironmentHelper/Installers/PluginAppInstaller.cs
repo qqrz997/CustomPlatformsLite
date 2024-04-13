@@ -3,11 +3,11 @@ using Zenject;
 
 namespace EnvironmentHelper.Installers
 {
-    internal class CPLAppInstaller : Installer
+    internal class PluginAppInstaller : Installer
     {
         private readonly PluginConfig config;
 
-        public CPLAppInstaller(PluginConfig config)
+        public PluginAppInstaller(PluginConfig config)
         {
             this.config = config;
         }

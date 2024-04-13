@@ -40,6 +40,16 @@
     <DisableZipRelease>True</DisableZipRelease>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony, Version=2.10.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+      <HintPath>$(BeatSaberDir)\Libs\0Harmony.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="BGLib.AppFlow, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+      <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\BGLib.AppFlow.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="BGLib.UnityExtension, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <Private>False</Private>
       <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\BGLib.UnityExtension.dll</HintPath>
@@ -127,14 +137,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Environments\DefaultEnvironment.cs" />
+    <Compile Include="Environments\Structures\EnvironmentBase.cs" />
+    <Compile Include="Environments\Structures\IEnvironment.cs" />
+    <Compile Include="Extensions\ListExtensions.cs" />
+    <Compile Include="Extensions\ObjectListHelpers.cs" />
     <Compile Include="Extensions\TransformExtensions.cs" />
     <Compile Include="Game\GetEnvironments.cs" />
-    <Compile Include="Installers\CPLAppInstaller.cs" />
-    <Compile Include="Installers\CPLGameInstaller.cs" />
-    <Compile Include="Installers\CPLMenuInstaller.cs" />
+    <Compile Include="Game\EnvironmentSerializedName.cs" />
+    <Compile Include="Installers\PluginAppInstaller.cs" />
+    <Compile Include="Installers\PluginGameInstaller.cs" />
+    <Compile Include="Installers\PluginMenuInstaller.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Configuration\PluginConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="testpatch.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="manifest.json" />

@@ -3,11 +3,11 @@ using Zenject;
 
 namespace EnvironmentHelper.Installers
 {
-    internal class CPLGameInstaller : Installer
+    internal class PluginGameInstaller : Installer
     {
         public override void InstallBindings()
         {
-            Container.BindInterfacesAndSelfTo<GetEnvironments>().AsSingle().NonLazy();
+            Container.BindInterfacesAndSelfTo<GetEnvironments>().AsSingle();
         }
     }
 }

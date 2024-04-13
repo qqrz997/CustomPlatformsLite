@@ -2,7 +2,7 @@
 
 namespace EnvironmentHelper.Installers
 {
-    internal class CPLMenuInstaller : Installer
+    internal class PluginMenuInstaller : Installer
     {
         public override void InstallBindings()
         {
